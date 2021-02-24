@@ -3,30 +3,57 @@
   <head>
     <meta charset="utf-8">
     <title>Crane Weight Calculations</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <h1>Crane Weight Calculations</h1>
-    <p><<strong>Fill All Dimensions in mm</strong>></p>
-    <div class="beams">
+    <p><strong>Fill All Dimensions in mm</strong></p>
+    <hr>
+
       <form action="/" method="post">
-        <label for="span">Enter Span</label>
+        <div class="beams">
+        <h2>Fill Dimensions of Beams</h2>
+        <label >Enter Span</label>
         <input type="text" name="span" >
-        <label for="height">Enter Height</label>
+        <label >Enter Height</label>
         <input type="text" name="height" >
-        <label for="width">Enter Width</label>
+        <label >Enter Width</label>
         <input type="text" name="width" ><br>
-        <label for="">Side Plate size</label>
+        <label >Side Plate size</label>
         <input type="text" name="sidePlate" value="">
-        <label for="">Top Plate</label>
+        <label >Top Plate</label>
         <input type="text" name="topPlate" value="">
-        <label for="">Bottom Plate</label>
+        <label >Bottom Plate</label>
         <input type="text" name="bottomPlate" value=""><br>
-        <label for="">No. of Beams</label>
+        <label >No. of Beams</label>
         <input type="text" name="noOfBeams" value="">
-        <button type="submit" name="button">Go</button>
+        <!-- <button type="submit" name="button">Go</button> -->
+        <hr>
+        </div>
+        <div class="end-carriage">
+        <h2>Fill Dimensions of End Carriage</h2>
+        <label >Enter Span</label>
+        <input type="text" name="spanEC" >
+        <label >Enter Height</label>
+        <input type="text" name="heightEC" >
+        <label >Enter Width</label>
+        <input type="text" name="widthEC" ><br>
+        <label >Side Plate size</label>
+        <input type="text" name="sidePlateEC" value="">
+        <label >Top Plate</label>
+        <input type="text" name="topPlateEC" value="">
+        <label >Bottom Plate</label>
+        <input type="text" name="bottomPlateEC" value=""><br>
+        <label >No. of End Carriages</label>
+        <input type="text" name="noOfEC" value=""><br
+        </div>
+        <hr>
+        <button class="btn btn-lg btn-dark" type="submit" name="button">Go</button>
+
       </form>
 
-    </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
   </body>
 </html>
